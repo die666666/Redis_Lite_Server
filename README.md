@@ -15,8 +15,10 @@ A lightweight Redis-compatible in-memory data store built from scratch in Python
 
 ## How to Run 
 1) Connect using Redis CLI (via Docker)
+
 docker run -it --rm redis redis-cli -h host.docker.internal -p 6379
 
 2) Benchmark
+
 docker run -it --rm redis redis-benchmark \
   -h host.docker.internal -p 6379 -t SET,GET -n 1000
